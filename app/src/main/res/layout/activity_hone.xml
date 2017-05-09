@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <LinearLayout
+        android:id="@+id/top_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#24f63d"
+        android:weightSum="10">
+        <TextView
+            android:id="@+id/zonghe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="综合"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_weight="8"/>
+        <ImageView
+            android:id="@+id/sousuo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/actionbar_search_icon"
+            android:layout_weight="2"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/home_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/Main_group"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <RadioButton
+            android:id="@+id/main_news"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/main_zonghe"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:text="综合"
+            android:textColor="@drawable/synthesize_text" />
+
+        <RadioButton
+            android:id="@+id/main_move"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/main_tweet"
+            android:gravity="center"
+            android:text="动弹"
+            android:layout_gravity="center_vertical"
+            android:textColor="@drawable/synthesize_text" />
+
+        <RadioButton
+            android:layout_marginTop="5dp"
+            android:id="@+id/main_iamge_build"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/main_build"
+            android:gravity="center" />
+
+        <RadioButton
+            android:id="@+id/main_discover"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/main_discover"
+            android:gravity="center"
+            android:text="发现"
+            android:layout_gravity="center_vertical"
+
+            android:textColor="@drawable/synthesize_text" />
+
+        <RadioButton
+            android:id="@+id/main_mine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/main_mine"
+            android:gravity="center"
+            android:text="我的"
+            android:layout_gravity="center_vertical"
+
+            android:textColor="@drawable/synthesize_text" />
+
+    </RadioGroup>
+
+
+
+</LinearLayout>
